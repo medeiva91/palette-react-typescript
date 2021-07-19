@@ -21,7 +21,7 @@ export const Form: React.FC = () => {
         setImgFile(file);
         setImgPreview(URL.createObjectURL(file))
     }
-    
+
     const { getRootProps } = useDropzone({
         accept: "image/*",
         onDrop: (acceptedFiles) => {
@@ -92,7 +92,6 @@ export const Form: React.FC = () => {
 
     return(
         <div className="form">
-
             <div className="form__block">
                 < InputTextForm label={"Имя"} handleChange={handleChangeName} value={ name } />
                 < InputTextForm label={"Фамилия"} handleChange={handleChangeSurname} value={ surname }/>
@@ -115,13 +114,11 @@ export const Form: React.FC = () => {
                         onChange={handleChangeImg}
                         accept="image/*"
                     />
-
                 </div>
 
                 <button onClick={ postData }>
                     Сохранить
                 </button>
-
             </div>
 
             <div className="form__response">

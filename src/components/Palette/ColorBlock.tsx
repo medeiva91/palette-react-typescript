@@ -34,7 +34,6 @@ import { UIColor } from '../../types/palette';
                 />
             }
             
-            
             { 
                 (isNewBlock || 
                 (isChengeColor)) &&  

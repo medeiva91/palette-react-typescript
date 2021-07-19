@@ -41,7 +41,6 @@ export const Palette: React.FC = () => {
                 {
                     isAdding && 
                     <ColorBlock color={{id: 0, hex: activeColorHex}}  blockColorPickerEl={newColorBlockEl} isNewBlock={true} key="newBlock"/>
-
                 }
             </div>
             <button onClick={()=> {AddColor()}}>

@@ -125,8 +125,7 @@ export const Form: React.FC = () => {
                     <label>
                         Response
                     </label>
-                    <textarea readOnly  value={response}
-                    />
+                    <textarea readOnly value={response} />
             </div>
         </div>
     );

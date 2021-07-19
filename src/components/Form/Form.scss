@@ -1,0 +1,111 @@
+.form {
+    &__title {
+        font-family: Gotham Pro;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #ffffff;
+    }
+
+    &__block {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__response {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 23px;
+
+        label {
+            margin-bottom: 8px;
+            font-family: Gotham Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 22px;
+            color: rgba(235, 235, 245, 0.6);
+        }
+
+        textarea {
+            background: rgba(118, 118, 128, 0.24);
+            border-radius: 10px;
+            background: rgba(118, 118, 128, 0.24);
+            border-radius: 10px;
+            max-width: 343px;
+            height: 120px;
+            font-size: 17px;
+            line-height: 22px;
+            color: rgba(235, 235, 245, 0.6);
+            padding: 10px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        label {
+            margin-bottom: 8px;
+            font-family: Gotham Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 22px;
+            color: rgba(235, 235, 245, 0.6);
+
+            span.error {
+                color: #cf6a59;
+            }
+        }
+
+        input {
+            background: rgba(118, 118, 128, 0.24);
+            border-radius: 10px;
+            background: rgba(118, 118, 128, 0.24);
+            border-radius: 10px;
+            max-width: 343px;
+            height: 36px;
+            padding: 10px;
+            font-size: 17px;
+            line-height: 22px;
+            color: rgba(235, 235, 245, 0.6);
+        }
+
+        .load-file {
+            cursor: pointer;
+
+            img {
+                padding: 15px 31px;
+                background: rgba(118, 118, 128, 0.24);
+                border-radius: 10px;
+                width: 122px;
+                height: 86px;
+            }
+        }
+
+        .load-file.error {
+            img {
+                border: #cf6a59 1px solid;
+            }
+        }
+
+        .input__load-file {
+            display: none;
+        }
+    }
+
+    button {
+        background: #007aff;
+        border-radius: 8px;
+        max-width: 343px;
+        height: 50px;
+        font-size: 17px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,65 @@
+.palette {
+    display: flex;
+    flex-direction: column;
+
+    &__colors {
+        display: flex;
+        max-width: 343px;
+        margin-left: 16px;
+        margin-bottom: 200px;
+        margin-top: 33px;
+        flex-wrap: wrap;
+
+        &-item {
+            cursor: pointer;
+            width: 54px;
+            height: 54px;
+            background-color: #007aff;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            position: relative;
+
+            .remove-icon {
+                position: absolute;
+                opacity: 0;
+                left: 39px;
+                top: 2px;
+            }
+
+            &:hover .remove-icon {
+                transition: opacity 0.15s ease-in-out;
+
+                opacity: 0.4;
+            }
+
+            .remove-icon:hover {
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    button {
+        background: #007aff;
+        border-radius: 8px;
+        max-width: 343px;
+        height: 50px;
+        font-size: 17px;
+        line-height: 22px;
+        color: #ffffff;
+    }
+
+    .changed-color {
+        position: relative;
+    }
+
+    .colorPicker {
+        top: 66px;
+        right: 59px;
+        z-index: 10;
+    }
+}

@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Form from './components/Form';
+import Palette from './components/Palette';
+import { Switch, Route, NavLink } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container">
+        <nav>
+            <ul>
+                <li>
+                    <NavLink exact={true} activeClassName="selected" to="/">Форма</NavLink >
+                </li>
+                <li>
+                    <NavLink activeClassName="selected" to="/palette">Палитра</NavLink >
+                </li>
+            </ul>
+        </nav>
+        <Switch>
+            <Route exact path="/">
+                <Form />
+            </Route>
+            <Route  path="/palette">
+                <Palette />
+            </Route>
+        </Switch>
+       </div> 
   );
 }
 
